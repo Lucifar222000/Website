@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fiko's Place – Fine Dining &amp; Craft Kitchen</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <!-- StyleSheet CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ═══════════════════ NAVBAR ═══════════════════ -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <!-- BRAND / LOGO -->
+    <a class="navbar-brand d-flex align-items-center gap-3" href="#hero">
+      <div class="brand-logo">
+        <!-- Inline SVG Logo -->
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="none">
+          <!-- Outer ring -->
+          <circle cx="50" cy="50" r="47" stroke="#c8a96e" stroke-width="1.5"/>
+          <!-- Inner ring -->
+          <circle cx="50" cy="50" r="40" stroke="#c8a96e" stroke-width=".6" stroke-dasharray="4 3"/>
+          <!-- Plate base -->
+          <ellipse cx="50" cy="62" rx="20" ry="4" fill="#c8a96e" opacity=".3"/>
+          <!-- Fork -->
+          <line x1="30" y1="30" x2="30" y2="52" stroke="#c8a96e" stroke-width="2" stroke-linecap="round"/>
+          <line x1="27" y1="30" x2="27" y2="38" stroke="#c8a96e" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="30" y1="30" x2="30" y2="38" stroke="#c8a96e" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="33" y1="30" x2="33" y2="38" stroke="#c8a96e" stroke-width="1.5" stroke-linecap="round"/>
+          <!-- Knife -->
+          <line x1="70" y1="30" x2="70" y2="52" stroke="#c8a96e" stroke-width="2" stroke-linecap="round"/>
+          <path d="M70 30 Q75 36 70 43" stroke="#c8a96e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <!-- Spoon -->
+          <line x1="50" y1="40" x2="50" y2="58" stroke="#c8a96e" stroke-width="1.8" stroke-linecap="round"/>
+          <ellipse cx="50" cy="35" rx="4" ry="6" stroke="#c8a96e" stroke-width="1.5"/>
+          <!-- F monogram -->
+          <text x="50" y="78" text-anchor="middle" font-family="Playfair Display, serif" font-size="10" font-weight="700" fill="#c8a96e" letter-spacing="2">FIKO'S</text>
+        </svg>
+      </div>
+      <div>
+        <span class="brand-name">Fiko's Place</span>
+        <span class="brand-tagline">Fine Dining &amp; Craft Kitchen</span>
+      </div>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navCollapse">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#specials">Specials</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-lg-3"><a class="nav-link nav-reserve" href="#reservation">Reserve a Table</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-divider"></div>
+  <div class="hero-content container text-center px-4">
+    <h1 class="hero-title mb-4"><br>
+    Where Every<em>Plate Tells</em>a Story
+    </h1>
+    <p class="hero-sub mb-5">Discover bold West African flavours fused with contemporary craft. An experience crafted for the senses.</p>
+    <div class="hero-cta-wrap d-flex flex-wrap gap-3 justify-content-center">
+      <a href="#menu" class="btn-gold px-5 py-3">Explore Our Menu</a>
+      <a href="#reservation" class="btn-outline-gold px-5 py-3">Reserve a Table</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ ABOUT ═══════════════════ -->
+<section id="about">
+  <div class="container py-4">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5 reveal">
+        <div class="about-img-wrap">
+          <div class="about-img-frame"></div>
+          <!-- Artistic placeholder for chef image -->
+          <div class="about-img" style="background:linear-gradient(160deg,#2a1f10 0%,#5c3d1e 40%,#3a2810 100%); display:flex; align-items:center; justify-content:center;">
+            <svg width="120" height="160" viewBox="0 0 120 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity:.4">
+              <ellipse cx="60" cy="52" rx="28" ry="30" stroke="#c8a96e" stroke-width="1.5"/>
+              <path d="M20 160 Q20 100 60 95 Q100 100 100 160" stroke="#c8a96e" stroke-width="1.5" fill="none"/>
+              <path d="M38 50 Q36 28 60 26 Q84 28 82 50" stroke="#c8a96e" stroke-width="2" fill="none"/>
+              <rect x="30" y="22" width="60" height="12" rx="6" stroke="#c8a96e" stroke-width="1.5"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7 reveal reveal-delay-2">
+        <span class="section-label">Our Story</span>
+        <h2 class="section-title">Passion Plated,<br><em>Perfectly.</em></h2>
+        <span class="gold-rule left"></span>
+        <p class="mb-3" style="color:var(--text-md);line-height:1.8;font-size:.93rem;">
+          Founded by Chef Fikayo Adeyemi in 2010, Fiko's Place was born from a simple belief — that food should be a journey. Drawing from his grandmother's kitchen in Ibadan and a decade of training across Paris and Cape Town, Fikayo blends the soul of West Africa with the precision of modern fine dining.
+        </p>
+        <p class="mb-4" style="color:var(--text-md);line-height:1.8;font-size:.93rem;">
+          Every dish at Fiko's Place is a conversation between tradition and innovation — using locally-sourced ingredients, seasonal produce, and time-honoured techniques elevated for the contemporary palate.
+        </p>
+        <div class="row g-3 mb-4">
+          <div class="col-sm-4 reveal reveal-delay-1">
+            <div class="stat-box">
+              <div class="num">14</div>
+              <div class="lbl">Years of Craft</div>
+            </div>
+          </div>
+          <div class="col-sm-4 reveal reveal-delay-2">
+            <div class="stat-box">
+              <div class="num">80+</div>
+              <div class="lbl">Unique Dishes</div>
+            </div>
+          </div>
+          <div class="col-sm-4 reveal reveal-delay-3">
+            <div class="stat-box">
+              <div class="num">3×</div>
+              <div class="lbl">Award Winner</div>
+            </div>
+          </div>
+        </div>
+        <a href="#reservation" class="btn-gold">Reserve Your Evening</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ MENU ═══════════════════ -->
+<section id="menu">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-label">Culinary Selection</span>
+      <h2 class="section-title">Our <em>Signature</em> Menu</h2>
+      <span class="gold-rule"></span>
+      <p style="color:var(--text-md);max-width:500px;margin:0 auto;font-size:.88rem;line-height:1.75">
+        A rotating selection of dishes inspired by season, story, and soul.
+      </p>
+    </div>
+
+    <!-- Tabs -->
+    <ul class="nav menu-tabs justify-content-center flex-wrap gap-2 mb-5 reveal" id="menuTabs" role="tablist">
+      <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#starters" type="button">Starters</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#mains" type="button">Mains</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#desserts" type="button">Desserts</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#drinks" type="button">Drinks</button></li>
+    </ul>
+
+    <div class="tab-content" id="menuTabContent">
+
+      <!-- STARTERS -->
+      <div class="tab-pane fade show active" id="starters">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 reveal"><div class="menu-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <span class="item-name">Suya Tartare</span>
+              <span class="badge-tag">Chef's Pick</span>
+            </div>
+            <p class="item-desc">Spiced beef tartare, fermented locust bean aioli, crispy plantain chips, pickled scotch bonnet.</p>
+            <div class="d-flex align-items-center gap-2"><div class="menu-dot"></div><span class="item-price">Pkr8,500</span></div>
+          </div></div>
+          <div class="col-md-6 col-lg-4 reveal reveal-delay-1"><div class="menu-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <span class="item-name">Egusi Velouté</span>
+              <span class="badge-tag">Signature</span>
+            </div>
+            <p class="item-desc">Silky ground melon seed soup, smoked catfish foam, crayfish oil, fresh herbs.</p>
+            <div class="d-flex align-items-center gap-2"><div class="menu-dot"></div><span class="item-price">Pkr6,200</span></div>
+          </div></div>
+          <div class="col-md-6 col-lg-4 reveal reveal-delay-2"><div class="menu-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <span class="item-name">Akara Croquettes</span>
+            </div>
+            <p class="item-desc">Crispy black-eyed pea fritters, pepper sauce, dende oil emulsion, shaved uziza.</p>
+            <div class="d-flex align-items-center gap-2"><div class="menu-dot"></div><span class="item-price">Pkr5,400</span></div>
+          </div></div>
+          <div class="col-md-6 col-lg-4 reveal"><div class="menu-card h-100">
+            <span class="item-name">Puff-Puff Amuse</span>
+            <p class="item-desc">Light spiced doughnuts, honey-chilli glaze, toasted coconut, palm sugar dust.</p>
+            <div class="d-flex align-items-center gap-2"><div class="menu-dot"></div><span class="item-price">Pkr4,800</span></div>
+          </div></div>
+          <div class="col-md-6 col-lg-4 reveal reveal-delay-1"><div class="menu-card h-100">
+            <span class="item-name">Grilled Tiger Prawns</span>
+            <p class="item-desc">Citrus-marinated prawns, ogiri butter, charred corn purée, micro coriander.</p>
+            <div class="d-flex align-items-center gap-2"><div class="menu-dot"></div><span class="item-price">Pkr11,000</span></div>
+          </div></div>
+          <div class="col-md-6 col-lg-4 reveal reveal-delay-2"><div class="menu-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <span class="item-name">Garden Bites</span>
+              <span class="badge-tag">Vegan</span>
+            </div>
+            <p class="item-desc">Seasonal roasted vegetables, pepper ratatouille, flaxseed crackers, cashew cream.</p>
+            <div class="d-flex align-items-center gap-2"><div class="menu-dot"></div><span class="item-price">Pkr5,800</span></div>
+          </div></div>
+        </div>
+      </div>
+
+      <!-- MAINS -->
+      <div class="tab-pane fade" id="mains">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4"><div class="menu-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <span class="item-name">Oha Lamb Rack</span>
+              <span class="badge-tag">Signature</span>
+            </div>
+            <p class="item-desc">Herb-crusted lamb, oha leaf jus, yam fondant, pickled garden eggs.</p>
+            <div class="d-flex align-items-center gap-2"><div class="menu-dot"></div><span class="item-price">Pkr24,500</span></div>
+          </div></div>
+          <div class="col-md-6 col-lg-4"><div class="menu-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <span class="item-name">Jollof Risotto</span>
+              <span class="badge-tag">Chef's Pick</span>
+            </div>
+            <p class="item-desc">Smoky tomato-infused arborio, grilled prawns, parmesan, crispy shallots.</p>
+            <div class="d-flex align-items-center gap-2"><div class="menu-dot"></div><span class="item-price">Pkr18,200</span></div>
+          </div></div>
+          <div class="col-md-6 col-lg-4"><div class="menu-card h-100">
+            <span class="item-name">Fiko's Whole Sea Bass</span>
+            <p class="item-desc">Salt-baked whole bass, banga pepper broth, fried plantain, citrus gremolata.</p>
+            <div class="d-flex align-items-center gap-2"><div class="menu-dot"></div><span class="item-price">Pkr21,000</span></div>
+          </div></div>
+          <div class="col-md-6 col-lg-4"><div class="menu-card h-100">
+            <span class="item-name">Dry-Aged Beef Tenderloin</span>
+            <p class="item-desc">28-day aged tenderloin, groundnut reduction, sautéed vegetables, roasted garlic pomme purée.</p>
+            <div class="d-flex align-items-center gap-2"><div class="menu-dot"></div><span class="item-price">Pkr32,000</span></div>
+          </div></div>
+          <div class="col-md-6 col-lg-4"><div class="menu-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <span class="item-name">Mushroom Ofe</span>
+              <span class="badge-tag">Vegan</span>
+            </div>
+            <p class="item-desc">Wild mushroom stew, coconut cream, crispy cocoyam croutons, smoked paprika oil.</p>
+            <div class="d-flex align-items-center gap-2"><div class="menu-dot"></div><span class="item-price">Pkr14,800</span></div>
+          </div></div>
+          <div class="col-md-6 col-lg-4"><div class="menu-card h-100">
+            <span class="item-name">Peppered Chicken Supreme</span>
+            <p class="item-desc">Oven-roasted chicken, scotch bonnet-tomato compote, garlic yam mash, wilted greens.</p>
+            <div class="d-flex align-items-center gap-2"><div class="menu-dot"></div><span class="item-price">Pkr17,500</span></div>
+          </div></div>
+        </div>
+      </div>
+
+      <!-- DESSERTS -->
+      <div class="tab-pane fade" id="desserts">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4"><div class="menu-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <span class="item-name">Zobo Sorbet</span>
+              <span class="badge-tag">Vegan</span>
+            </div>
+            <p class="item-desc">Hibiscus flower sorbet, candied ginger, fresh mint, lime zest sugar.</p>
+            <div class="d-flex align-items-center gap-2"><div class="menu-dot"></div><span class="item-price">Pkr5,200</span></div>
+          </div></div>
+          <div class="col-md-6 col-lg-4"><div class="menu-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <span class="item-name">Chocolate Peanut Fondant</span>
+              <span class="badge-tag">Chef's Pick</span>
+            </div>
+            <p class="item-desc">Warm dark chocolate cake, groundnut praline centre, coconut ice cream, caramel drizzle.</p>
+            <div class="d-flex align-items-center gap-2"><div class="menu-dot"></div><span class="item-price">Pkr7,800</span></div>
+          </div></div>
+          <div class="col-md-6 col-lg-4"><div class="menu-card h-100">
+            <span class="item-name">Mango Panna Cotta</span>
+            <p class="item-desc">Creamy panna cotta, fresh Alphonso mango coulis, toasted coconut flakes, passion fruit.</p>
+            <div class="d-flex align-items-center gap-2"><div class="menu-dot"></div><span class="item-price">Pkr6,500</span></div>
+          </div></div>
+        </div>
+      </div>
+
+      <!-- DRINKS -->
+      <div class="tab-pane fade" id="drinks">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4"><div class="menu-card h-100">
+            <span class="item-name">Fiko's Signature Zobo</span>
+            <p class="item-desc">House-brewed hibiscus, fresh ginger, cloves, chilled and served over ice.</p>
+            <div class="d-flex align-items-center gap-2"><div class="menu-dot"></div><span class="item-price">Pkr3,200</span></div>
+          </div></div>
+          <div class="col-md-6 col-lg-4"><div class="menu-card h-100">
+            <span class="item-name">Palm Wine Spritz</span>
+            <p class="item-desc">Fresh palm wine, sparkling water, lime, crushed ice, mint.</p>
+            <div class="d-flex align-items-center gap-2"><div class="menu-dot"></div><span class="item-price">Pkr4,500</span></div>
+          </div></div>
+          <div class="col-md-6 col-lg-4"><div class="menu-card h-100">
+            <span class="item-name">Lagos Sunset Mocktail</span>
+            <p class="item-desc">Tamarind, mango, orange bitters, coconut water, salted caramel rim.</p>
+            <div class="d-flex align-items-center gap-2"><div class="menu-dot"></div><span class="item-price">Pkr4,200</span></div>
+          </div></div>
+        </div>
+      </div>
+
+    </div><!-- /tab-content -->
+
+    <div class="text-center mt-5 reveal">
+      <a href="#reservation" class="btn-outline-gold">View Full Menu &amp; Book</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SPECIALS ═══════════════════ -->
+<section id="specials">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-label">Current Offerings</span>
+      <h2 class="section-title">House <em>Specials</em></h2>
+      <span class="gold-rule"></span>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="special-card">
+          <i class="bi bi-sunrise special-icon"></i>
+          <h5>Sunday Brunch</h5>
+          <p>Lazy Sunday indulgence. Three-course brunch with live Afro-jazz from 11am–3pm. ₦12,000 per person.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal reveal-delay-1">
+        <div class="special-card">
+          <i class="bi bi-moon-stars special-icon"></i>
+          <h5>Chef's Tasting Table</h5>
+          <p>A 7-course culinary journey curated by Chef Fikayo every Friday evening. Limited to 12 seats. ₦45,000.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal reveal-delay-2">
+        <div class="special-card">
+          <i class="bi bi-heart special-icon"></i>
+          <h5>Couples' Evening</h5>
+          <p>Candle-lit table for two, shared tasting plates, artisan wines, and a keepsake dessert. ₦38,000/couple.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal reveal-delay-3">
+        <div class="special-card">
+          <i class="bi bi-people special-icon"></i>
+          <h5>Private Dining</h5>
+          <p>Our exclusive cellar room seats up to 16. Perfect for corporate dinners, milestones, and celebrations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ GALLERY ═══════════════════ -->
+<section id="gallery">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-label">A Visual Feast</span>
+      <h2 class="section-title">From Our <em>Kitchen</em></h2>
+      <span class="gold-rule"></span>
+    </div>
+    <div class="gallery-grid reveal">
+      <div class="g-item"><div class="g-bg g1"></div><div class="g-overlay"><i class="bi bi-zoom-in"></i></div></div>
+      <div class="g-item"><div class="g-bg g2"></div><div class="g-overlay"><i class="bi bi-zoom-in"></i></div></div>
+      <div class="g-item"><div class="g-bg g3"></div><div class="g-overlay"><i class="bi bi-zoom-in"></i></div></div>
+      <div class="g-item"><div class="g-bg g4"></div><div class="g-overlay"><i class="bi bi-zoom-in"></i></div></div>
+      <div class="g-item"><div class="g-bg g5"></div><div class="g-overlay"><i class="bi bi-zoom-in"></i></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ RESERVATION ═══════════════════ -->
+<section id="reservation">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-label">Join Us</span>
+      <h2 class="section-title">Reserve a <em>Table</em></h2>
+      <span class="gold-rule"></span>
+      <p style="color:var(--text-md);max-width:460px;margin:0 auto;font-size:.88rem;line-height:1.75">
+        Reservations recommended. Walk-ins welcome based on availability.
+      </p>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-9 reveal">
+        <div class="reserve-wrap">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-control" placeholder="Your name"/>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-control" placeholder="your@email.com"/>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" placeholder="+234 000 000 0000"/>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Number of Guests</label>
+              <select class="form-select">
+                <option>1 Guest</option>
+                <option>2 Guests</option>
+                <option>3–4 Guests</option>
+                <option>5–6 Guests</option>
+                <option>7–10 Guests</option>
+                <option>Private Dining (10+)</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Preferred Date</label>
+              <input type="date" class="form-control"/>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Preferred Time</label>
+              <select class="form-select">
+                <option>12:00 PM – Lunch</option>
+                <option>1:00 PM</option>
+                <option>6:00 PM – Dinner</option>
+                <option>7:00 PM</option>
+                <option>7:30 PM</option>
+                <option>8:00 PM</option>
+                <option>8:30 PM</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Special Requests</label>
+              <textarea class="form-control" rows="3" placeholder="Dietary requirements, occasion, seating preference..."></textarea>
+            </div>
+            <div class="col-12 text-center">
+              <button type="button" class="btn-gold px-5 py-3" onclick="handleReservation()">Confirm Reservation</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ TESTIMONIALS ═══════════════════ -->
+<section id="testimonials">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-label">Guest Reviews</span>
+      <h2 class="section-title">What Our <em>Guests</em> Say</h2>
+      <span class="gold-rule"></span>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Fiko's Place is in a league of its own. The Suya Tartare was an absolute revelation — bold, familiar, and entirely new at once. Chef Fikayo is a genius."</p>
+          <div class="testi-author">Amara O.</div>
+          <div class="testi-role">Food Critic, ThisDay Newspaper</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"We celebrated our anniversary here and it was magical. The private room, the service, the tasting menu — every detail was perfect. We'll be back for every milestone."</p>
+          <div class="testi-author">Chidi &amp; Ngozi B.</div>
+          <div class="testi-role">Loyal Guests since 2018</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"The Jollof Risotto sounds like a gimmick until you taste it. It's the most thoughtful dish I've had anywhere in Africa. Fiko's Place deserves every award it has won."</p>
+          <div class="testi-author">Kolade A.</div>
+          <div class="testi-role">Travel & Lifestyle Blogger</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ CONTACT ═══════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="row g-5">
+      <!-- Logo + About -->
+      <div class="col-lg-4 reveal">
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <svg width="44" height="44" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <circle cx="50" cy="50" r="47" stroke="#c8a96e" stroke-width="1.5"/>
+            <circle cx="50" cy="50" r="40" stroke="#c8a96e" stroke-width=".6" stroke-dasharray="4 3"/>
+            <line x1="30" y1="30" x2="30" y2="52" stroke="#c8a96e" stroke-width="2" stroke-linecap="round"/>
+            <line x1="27" y1="30" x2="27" y2="38" stroke="#c8a96e" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="30" y1="30" x2="30" y2="38" stroke="#c8a96e" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="33" y1="30" x2="33" y2="38" stroke="#c8a96e" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="70" y1="30" x2="70" y2="52" stroke="#c8a96e" stroke-width="2" stroke-linecap="round"/>
+            <path d="M70 30 Q75 36 70 43" stroke="#c8a96e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <line x1="50" y1="40" x2="50" y2="58" stroke="#c8a96e" stroke-width="1.8" stroke-linecap="round"/>
+            <ellipse cx="50" cy="35" rx="4" ry="6" stroke="#c8a96e" stroke-width="1.5"/>
+            <text x="50" y="78" text-anchor="middle" font-family="Playfair Display, serif" font-size="10" font-weight="700" fill="#c8a96e" letter-spacing="2">FIKO'S</text>
+          </svg>
+          <div>
+            <div style="font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--gold);font-weight:700">Fiko's Place</div>
+            <div style="font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--text-md)">Fine Dining &amp; Craft Kitchen</div>
+          </div>
+        </div>
+        <p style="font-size:.83rem;color:var(--text-md);line-height:1.75;margin-bottom:1.2rem">
+          Where West African heritage meets modern culinary artistry. A sanctuary for the discerning palate.
+        </p>
+        <div class="d-flex gap-2">
+          <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-sm-6 col-lg-2 reveal reveal-delay-1">
+        <h6 style="font-family:'Playfair Display',serif;color:var(--cream);font-size:1rem;margin-bottom:1rem">Navigate</h6>
+        <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem">
+          <li><a href="#about" style="color:var(--text-md);font-size:.82rem;transition:color .3s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--text-md)'">Our Story</a></li>
+          <li><a href="#menu" style="color:var(--text-md);font-size:.82rem;transition:color .3s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--text-md)'">The Menu</a></li>
+          <li><a href="#specials" style="color:var(--text-md);font-size:.82rem;transition:color .3s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--text-md)'">Specials</a></li>
+          <li><a href="#gallery" style="color:var(--text-md);font-size:.82rem;transition:color .3s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--text-md)'">Gallery</a></li>
+          <li><a href="#reservation" style="color:var(--text-md);font-size:.82rem;transition:color .3s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--text-md)'">Reserve</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-2">
+        <h6 style="font-family:'Playfair Display',serif;color:var(--cream);font-size:1rem;margin-bottom:1rem">Find Us</h6>
+        <div class="contact-info d-flex flex-column gap-3">
+          <div>
+            <span class="ci-label">Address</span>
+            <span class="ci-value" style="font-size:.83rem">14 Victoria Island Crescent,<br>Karachi,Pakistan</span>
+          </div>
+          <div>
+            <span class="ci-label">Phone</span>
+            <span class="ci-value" style="font-size:.83rem">+234 (0) 812 345 6789</span>
+          </div>
+          <div>
+            <span class="ci-label">Email</span>
+            <span class="ci-value" style="font-size:.83rem">hello@fikosplace.com</span>
+          </div>
+          <div>
+            <span class="ci-label">Hours</span>
+            <span class="ci-value" style="font-size:.83rem">Tue – Sun: 12pm – 10pm<br>Monday: Closed</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="col-lg-3 reveal reveal-delay-3">
+        <h6 style="font-family:'Playfair Display',serif;color:var(--cream);font-size:1rem;margin-bottom:1rem">Location</h6>
+        <div class="map-box">
+          <i class="bi bi-geo-alt" style="color:var(--gold);font-size:1.4rem"></i>
+          <span>Victoria Island, Karachi,Pakistan</span>
+        </div>
+        <a href="https://maps.google.com" target="_blank" class="d-block text-center mt-2" style="font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)">
+          Get Directions <i class="bi bi-arrow-up-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer bottom -->
+    <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <span>&copy; 2025 Fiko's Place. All rights reserved.</span>
+      <div class="d-flex gap-4">
+        <a href="#" style="color:var(--text-md);font-size:.72rem">Privacy Policy</a>
+        <a href="#" style="color:var(--text-md);font-size:.72rem">Terms of Use</a>
+      </div>
+      <span>Designed by Farukh Ahmed</span>
+    </div>
+  </div>
+</section>
+
+<!-- Toast notification -->
+<div id="toast" style="
+  position:fixed; bottom:2rem; right:2rem; z-index:9999;
+  background:var(--warm); border:1px solid var(--gold);
+  color:var(--text-lt); padding:1rem 1.5rem;
+  font-size:.85rem; border-radius:2px;
+  box-shadow:0 8px 32px rgba(0,0,0,.4);
+  transform:translateY(80px); opacity:0;
+  transition:transform .4s, opacity .4s;
+  max-width:320px;
+">
+  <i class="bi bi-check-circle" style="color:var(--gold);margin-right:.5rem"></i>
+  <strong>Reservation Received!</strong><br>
+  <span style="color:var(--text-md);font-size:.78rem">We'll confirm via email within 2 hours.</span>
+</div>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
